@@ -24,5 +24,11 @@ for i in range(0, len(year)):
 
 plt.plot(year, temp)
 plt.plot(year, average)
+
+plt.title("Yearly average rural temperatures and 11 year moving weighted average")
+plt.xlim(year[0], year[(len(year)-1)])
+plt.xlabel("Year")
+plt.ylabel("Temperature difference (°C)")
+plt.grid()
 plt.show()
 
